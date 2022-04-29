@@ -6,4 +6,4 @@ services:
     container_name: '${COMPOSE_PROJECT_NAME}'
     tty: true
     volumes:
-      - "../src/:/opt/src/"
+      - "../backend/:/opt/src/"
