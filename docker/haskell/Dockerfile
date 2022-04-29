@@ -7,20 +7,7 @@ RUN \
   apt-get update -y && \
   apt-get install -y --no-install-recommends \
   curl \
-  libnuma-dev \
-  zlib1g-dev \
-  libgmp-dev \
-  libgmp10 \
-  git \
-  wget \
-  lsb-release \
-  software-properties-common \
-  gnupg2 \
-  apt-transport-https \
-  gcc \
-  autoconf \
-  automake \
-  build-essential
+  gcc
 
 ARG GPG_KEY=7784930957807690A66EBDBE3786C5262ECB4A3F
 RUN gpg --batch --keyserver keys.openpgp.org --recv-keys $GPG_KEY
