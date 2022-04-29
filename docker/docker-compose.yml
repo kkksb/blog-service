@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  haskell:
+    build: ./haskell
+    container_name: '${COMPOSE_PROJECT_NAME}'
+    tty: true
+    volumes:
+      - "../src/:/opt/src/"
